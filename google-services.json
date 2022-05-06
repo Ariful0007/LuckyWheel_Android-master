@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "349369347699",
+    "firebase_url": "https://luckeywheel-default-rtdb.firebaseio.com",
+    "project_id": "luckeywheel",
+    "storage_bucket": "luckeywheel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349369347699:android:6e2a1e70bbabff333c4406",
+        "android_client_info": {
+          "package_name": "com.bluehomestudio.luckywheeldemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349369347699-ttju8g6l8dfh6qbpgok3ojp0hv0fides.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOQKorSnwayfnBkrhqeCYHzfZI98tlOqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349369347699-ttju8g6l8dfh6qbpgok3ojp0hv0fides.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349369347699:android:2d7e374dbe606b733c4406",
+        "android_client_info": {
+          "package_name": "com.messas.luckeywhileadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349369347699-ttju8g6l8dfh6qbpgok3ojp0hv0fides.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOQKorSnwayfnBkrhqeCYHzfZI98tlOqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349369347699-ttju8g6l8dfh6qbpgok3ojp0hv0fides.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349369347699:android:96fb21d719242c143c4406",
+        "android_client_info": {
+          "package_name": "com.messas.luckeywhileuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349369347699-9dmvpcijq5t8uborrk0raetl8tpdct8r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.messas.luckeywhileuser",
+            "certificate_hash": "98d14d108eeb7038cf6985697c0daa334b278342"
+          }
+        },
+        {
+          "client_id": "349369347699-s30k741218c1c57ks9kf8sbgiehs1ri9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.messas.luckeywhileuser",
+            "certificate_hash": "46a917fff7cad875d2f516e6f7e76111a9a2a0b6"
+          }
+        },
+        {
+          "client_id": "349369347699-ttju8g6l8dfh6qbpgok3ojp0hv0fides.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOQKorSnwayfnBkrhqeCYHzfZI98tlOqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349369347699-ttju8g6l8dfh6qbpgok3ojp0hv0fides.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

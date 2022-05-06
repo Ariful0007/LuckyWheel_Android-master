@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="General">
+        <menu>
+            <item
+
+                android:id="@+id/addNote"
+                android:icon="@drawable/ic_home"
+                android:title="Home" />
+
+            <item
+                android:id="@+id/addTab"
+                android:icon="@drawable/history"
+                android:title="Income History" />
+
+
+
+
+
+            <item
+                android:id="@+id/shareapp2"
+                android:icon="@drawable/ic_baseline_vpn_key_24"
+                android:title="Log out" />
+
+
+
+
+
+
+
+        </menu>
+    </item>
+
+
+
+
+</menu>

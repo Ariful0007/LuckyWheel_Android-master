@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".Work">
+    <RelativeLayout
+
+        android:id="@+id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/white"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+    <ScrollView
+
+        android:layout_below="@id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_below="@id/main_constraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:textColor="@color/black"
+                                android:id="@+id/appnamef"
+
+                                android:textSize="17dp"
+                                android:gravity="start"
+                                android:textStyle="bold"
+                                android:layout_marginRight="80dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:layout_marginBottom="5dp"
+                                android:textAlignment="viewStart"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="25dp"
+                                android:text="Watch Ad 15/20"
+                                android:padding="2dp"/>
+                            //
+                            <LinearLayout
+                                android:layout_marginTop="30dp"
+                                android:id="@+id/linearLayout1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:id="@+id/redeemCard"
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/open_sans_bold"
+                                        android:text="Ads Title"
+                                        android:layout_marginLeft="20dp"
+
+                                        android:textSize="15dp" />
+
+                                </LinearLayout>
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/open_sans_bold"
+                                        android:text="Amount"
+                                        android:layout_marginLeft="20dp"
+
+                                        android:textSize="15dp" />
+
+                                </LinearLayout>
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:textAlignment="center"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/open_sans_bold"
+                                        android:text="Action"
+                                        android:layout_marginLeft="20dp"
+
+                                        android:textSize="15dp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            //
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="Free Income"
+                                        android:layout_marginLeft="20dp"
+
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="$0.01"
+                                        android:layout_marginLeft="20dp"
+
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:background="@drawable/allbus"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:textAlignment="center"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/white"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="Watch Ad"
+                                        android:layout_marginLeft="20dp"
+
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="Free Income"
+                                        android:layout_marginLeft="20dp"
+
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="$0.01"
+                                        android:layout_marginLeft="20dp"
+
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:background="@drawable/allbus"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:textAlignment="center"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/white"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="Watch Ad"
+                                        android:layout_marginLeft="20dp"
+
+                                        android:textSize="10dp"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="Free Income"
+                                        android:layout_marginLeft="20dp"
+
+                                        android:textSize="10dp"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="$0.01"
+                                        android:layout_marginLeft="20dp"
+
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:background="@drawable/allbus"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:textAlignment="center"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/white"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="Watch Ad"
+                                        android:layout_marginLeft="20dp"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            //
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/linearLayout2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:id="@+id/redeemCar2d"
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="Free Income"
+                                        android:layout_marginLeft="20dp"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="$0.01"
+                                        android:layout_marginLeft="20dp"
+                                        android:textSize="10dp"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+
+                                    >
+                                    <TextView
+                                        android:background="@drawable/allbus"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:textAlignment="center"
+
+
+                                        android:layout_marginTop="@dimen/space_15dp"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/white"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="Watch Ad"
+                                        android:layout_marginLeft="20dp"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

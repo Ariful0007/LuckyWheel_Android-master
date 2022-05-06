@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Reply Preference -->
+    //
+    <string-array name="payment">
+        <item>Select Payment Methode</item>
+        <item>PayPal</item>
+
+        <item>Payoneer</item>
+        <item>MasterCard</item>
+    </string-array>
+    //
+    //
+    //
+
+</resources>

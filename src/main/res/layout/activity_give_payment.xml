@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GivePayment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient_background"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_below="@id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_below="@id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/space_10dp"
+        android:layout_marginRight="@dimen/space_10dp"
+        android:background="@drawable/main_bg"
+        android:gravity="center_vertical"
+        android:text=" My Points"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+
+        ></TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.owater.library.CircleTextView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                app:ct_backgroundColor="#0099CC"
+                app:ct_border_width="10dp"
+                app:ct_border_color="#0099CC"
+                app:ct_border_alpha="0.5"
+                app:ct_type="shadow_alpha"
+                android:id="@+id/cir"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:text="0.0"/>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dailyCheckCard1"
+        android:layout_width="match_parent"
+        android:onClick="first"
+        android:layout_height="130dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/indigo_ink"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="10dp"
+
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardUseCompatPadding="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:foregroundTint="@color/white"
+                android:layout_width="50dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+              android:text="15 BDT" />
+
+
+            <TextView
+                android:id="@+id/dddd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:padding="8dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Recharge"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/dddd"
+                android:layout_marginLeft="10dp"
+                android:foregroundTint="@color/white"
+                android:layout_width="wrap_content"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:layout_marginRight="120dp"
+                android:layout_alignParentRight="false"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="false"
+                android:text="  1500 POINTS" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+                //
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="second"
+                        android:id="@+id/dailyCheckCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/indigo_ink"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardUseCompatPadding="true"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:foregroundTint="@color/white"
+                                android:layout_width="50dp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="20dp"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="30 BDT" />
+
+
+                            <TextView
+                                android:id="@+id/dddd1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:padding="8dp"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/open_sans_bold"
+                                android:text="Recharge"
+                                android:gravity="center_horizontal" />
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_below="@+id/dddd1"
+                                android:layout_marginLeft="10dp"
+                                android:foregroundTint="@color/white"
+                                android:layout_width="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="120dp"
+                                android:layout_alignParentRight="false"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="false"
+                                android:text="  3000 POINTS" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="third"
+                        android:id="@+id/dailyCh2eckCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/indigo_ink"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardUseCompatPadding="true"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:foregroundTint="@color/white"
+                                android:layout_width="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="20dp"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="100 BDT" />
+
+
+                            <TextView
+                                android:id="@+id/dddd2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:padding="8dp"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/open_sans_bold"
+                                android:text="Bkash"
+                                android:gravity="center_horizontal" />
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_below="@+id/dddd2"
+                                android:layout_marginLeft="10dp"
+                                android:foregroundTint="@color/white"
+                                android:layout_width="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="120dp"
+                                android:layout_alignParentRight="false"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="false"
+                                android:text="  10000 POINTS" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="fot"
+                        android:id="@+id/dailyCh2eckCard3"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/indigo_ink"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardUseCompatPadding="true"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:foregroundTint="@color/white"
+                                android:layout_width="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="20dp"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="200 BDT" />
+
+
+                            <TextView
+                                android:id="@+id/dddd3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:padding="8dp"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/open_sans_bold"
+                                android:text="Bkash"
+                                android:gravity="center_horizontal" />
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_below="@+id/dddd3"
+                                android:layout_marginLeft="10dp"
+                                android:foregroundTint="@color/white"
+                                android:layout_width="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="120dp"
+                                android:layout_alignParentRight="false"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="false"
+                                android:text="  20000 POINTS" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="fot5"
+                        android:id="@+id/dailyCh2eckCard5"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/indigo_ink"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardUseCompatPadding="true"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:foregroundTint="@color/white"
+                                android:layout_width="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="20dp"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="500 BDT" />
+
+
+                            <TextView
+                                android:id="@+id/dddd4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:padding="8dp"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/open_sans_bold"
+                                android:text="Bkash"
+                                android:gravity="center_horizontal" />
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_below="@+id/dddd4"
+                                android:layout_marginLeft="10dp"
+                                android:foregroundTint="@color/white"
+                                android:layout_width="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="120dp"
+                                android:layout_alignParentRight="false"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="false"
+                                android:text="  50000 POINTS" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="fot6"
+                        android:id="@+id/dailyCh2eckCard36"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/indigo_ink"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="10dp"
+
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardUseCompatPadding="true"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:foregroundTint="@color/white"
+                                android:layout_width="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginTop="20dp"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="1000 BDT" />
+
+
+                            <TextView
+                                android:id="@+id/dddd36"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:padding="8dp"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/open_sans_bold"
+                                android:text="Bkash"
+                                android:gravity="center_horizontal" />
+                            <TextView
+                                android:layout_marginBottom="10dp"
+                                android:layout_below="@+id/dddd36"
+                                android:layout_marginLeft="10dp"
+                                android:foregroundTint="@color/white"
+                                android:layout_width="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="120dp"
+                                android:layout_alignParentRight="false"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="false"
+                                android:text="  100000 POINTS" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+               <RelativeLayout
+                   android:minHeight="70dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:background="@drawable/gradient_background"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   >
+                   <com.rengwuxian.materialedittext.MaterialEditText
+                       android:id="@+id/number"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="Mobile Number"
+                       android:maxLength="11"
+                       app:met_iconLeft="@android:drawable/stat_sys_phone_call"
+                       app:met_floatingLabel="highlight"
+                       app:met_baseColor="@color/white"
+                       app:met_errorColor="@color/darkWhite"
+                       app:met_clearButton="true"
+                       app:met_primaryColor="@color/white"
+                       android:inputType="number"/>
+               </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                        android:id="@+id/cirLoginButton"
+                        style="@style/loginButton"
+                        app:spinning_bar_width="4dp"
+                        app:spinning_bar_color="#FFF"
+                        android:textAllCaps="true"
+                        android:layout_marginBottom="50dp"
+                        android:text="PAy OUT"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        app:spinning_bar_padding="6dp"
+                        app:initialCornerAngle="27dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

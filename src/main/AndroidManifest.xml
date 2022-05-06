@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bluehomestudio.luckywheeldemo">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".LastWhile"
+            android:parentActivityName=".SecondHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" ></activity>
+        <activity
+            android:name=".Spin3Activity"
+            android:parentActivityName=".SecondHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".SpinActivityy"
+            android:parentActivityName=".SecondHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".HistoryActivity"
+            android:parentActivityName=".SecondHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".ConfromActivity"
+            android:parentActivityName=".BuyCoin"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".SendMyDarling"
+            android:parentActivityName=".SecondHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".BuyCoin"
+            android:parentActivityName=".SecondHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".UpdatePinActivity"
+            android:parentActivityName=".ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".CashWithdrawal"
+            android:parentActivityName=".SecondHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".DepositeActivity"
+            android:parentActivityName=".SecondHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".Work"
+            android:parentActivityName=".SecondHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".SecondWork"
+            android:parentActivityName=".SecondHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".SecondHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".SecondHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".NewRegistration"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".NewLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".MyTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".GivePayment"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".MyProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".InValidActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".WorkingHistory"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".My_Payment"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".AllPayment"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".ContactUs"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".NoticeBoard"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".HomeACTIVITY"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MySpinn"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+
+        <receiver android:name=".ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="vpn.connectivity" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comment_dialog_view"
+    android:layout_width="@dimen/comment_pop_up_width"
+    android:layout_height="500dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:paddingStart="5dp"
+        app:cardElevation="5dp"
+        android:theme="@style/CardView.Light"
+        android:id="@+id/title_comment_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingStart="5dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:fontFamily="@font/circular_std_book"
+            android:text="Add Payment Method"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CardView.Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_comment_card">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="4dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:id="@+id/linearLayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:text="*Card Number : "
+                                android:layout_marginLeft="20dp"
+
+                                android:textSize="15dp" />
+                            <EditText
+
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:text=" "
+                                android:id="@+id/methodename"
+                                android:textAlignment="center"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/bordd"
+                                ></EditText>
+                            <TextView
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:text="*Cardholder's Name : "
+                                android:layout_marginLeft="20dp"
+
+                                android:textSize="15dp" />
+                            <EditText
+
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:id="@+id/minwith"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/bordd"
+                                ></EditText>
+                            //
+                            distance
+                            <TextView
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:text="*Expiry Date : "
+                                android:layout_marginLeft="20dp"
+
+                                android:textSize="15dp" />
+                            <EditText
+
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:id="@+id/distance"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/bordd"
+                                ></EditText>
+                            //phone
+                            <TextView
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:text="*CVC"
+                                android:layout_marginLeft="20dp"
+
+                                android:textSize="15dp" />
+                            <EditText
+
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:text=""
+                                android:textAlignment="center"
+                                android:id="@+id/minwit23h"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/bordd"
+                                ></EditText>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                >
+                                <Button
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/login_button"
+                                    android:layout_centerInParent="true"
+                                    android:textColor="@color/white"
+                                    android:text="Submit"
+                                    android:backgroundTint="@color/warningColor"
+                                    style="@style/AppTheme.RoundedCornerMaterialButton" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dialogClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/dialog_close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="app_name">Lucky Wheel Online</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!--Navigation drawer items-->
+    <string name="home">Home</string>
+    <string name="myprofile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="feedback">Feedback</string>
+    <string name="noconnection">Kindly connect to a WIFI network or enable Mobile Data</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+    <!-- Sync Preferences -->
+
+
+    ///
+
+    <!--for facebook login-->
+
+    <!--facebook login ends-->
+
+    <!--error messages-->
+
+</resources>
